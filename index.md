@@ -1,11 +1,11 @@
 ---
 layout: home
-description: "Welcome to planet Manu, my official page for CTF write-up, Electronic tutorial, review and etc."
+description: "Welcome to SciaManu space, my official page for write something about my profession."
 ---
 
-## Welcome to planet DesKel
+## Welcome to SciaManu space
 
-Hello there, welcome to my planet. Just for your information, this page was formerly known as embeddedhacker.
+Hello folks, welcome to my space. Just for your information, this page is a secondary place in which I will put some contents that I think could be interesting.
 
 ---
 
@@ -16,9 +16,6 @@ Hello there, welcome to my planet. Just for your information, this page was form
 ---
 
 ## Planet map
-
-### Electronic projects
-- [Arduino](https://deskel.github.io/arduino)
 
 ### CTF write-up
 - [Backdoor]()
@@ -36,13 +33,13 @@ Hello there, welcome to my planet. Just for your information, this page was form
 
 ## About me
 
-I'm an Electronic enthusiast who interested in all sorts of electronic projects, especially on the embedded system and wireless technology. Besides that, I'm also taking cybersecurity as a secondary interest.
+I'm PhD in web security, working on PHP static analysis and an enthusiast who interested in all sorts of web projects and exploiting for ethical purpose. Besides that, I'm also taking general cybersecurity as a main interest.
 
 ---
 
 ## A small note on embeddedhacker.com
 
-The purpose of this page serves as an archive and update for the embeddedhacker.com. The reason is the upkeep for the previous site was pretty high (~ USD 200/year). Since the GitHub page offers a free hosting service for bloggers, I decided to migrate all the contents from the [embeddedhacker]()
+The purpose of this page serves as an archive and update to keep track of my progress. Since the GitHub page offers a free hosting service for bloggers, I decided to make this page.
 .
 
 **Migration progress: 100 %**

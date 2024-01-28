@@ -1,0 +1,25 @@
+#site-setting
+url : "https://manumanu97.github.io"
+github_repository: https://github.com/ManuManu97
+theme: jekyll-theme-hacker
+title: ManuManu97's space
+description: Manu's official page for CTF write-up, Electronic tutorial, review and etc.
+name: &name "DesKel"
+show_downloads: false
+
+#github page setting
+github:
+  is_project_page: false
+
+#site-author
+name : *name 
+bio  : "Electronic and cybersecurity enthusiasm"
+
+#footer
+footer_left: 2024 Manu
+footer_right: Privacy Policy
+
+#plugin
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed

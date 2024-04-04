@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<h1>{{ page.title }}</h1>
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+
+<hr>
+<h3>Vortex</h3>
+<a href="https://github.com/manumanu97"><i class="fab fa-github fa-2x"></i></a>
+<a href="https://twitter/slastimormanti"><i class="fab fa-twitter fa-2x"></i></a>
+
+<hr>
+<footer style="float:left;"><small>&copy; {{ site.footer_left }}</small></footer>
+<footer style="float:right;"><small><a href="">{{ site.footer_right }}</a></small></footer>

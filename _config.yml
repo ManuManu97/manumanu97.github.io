@@ -3,8 +3,8 @@ url : "https://manumanu97.github.io"
 github_repository: https://github.com/ManuManu97
 theme: jekyll-theme-hacker
 title: ManuManu97's space
-description: Manu's official page for CTF write-up, Electronic tutorial, review and etc.
-name: &name "DesKel"
+description: Manu's official page for my projects, review and etc.
+name: &name "Manu"
 show_downloads: false
 
 #github page setting
@@ -13,7 +13,7 @@ github:
 
 #site-author
 name : *name 
-bio  : "Electronic and cybersecurity enthusiasm"
+bio  : "web and cybersecurity enthusiasm"
 
 #footer
 footer_left: 2024 Manu

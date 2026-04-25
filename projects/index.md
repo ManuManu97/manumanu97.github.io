@@ -5,7 +5,6 @@ title: Projects
 
 # Projects
 
-# Notes
 <input type="text" id="searchInput" placeholder="Search...">
 <ul id="results-container"></ul>
 

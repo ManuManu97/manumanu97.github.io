@@ -6,9 +6,9 @@ title: Notes
 # Notes
 
 <ul>
-{% raw %}{% for n in site.notes %}
+{% for n in site.notes %}
   <li>
     <a href="{{ n.url }}">{{ n.title }}</a>
   </li>
-{% endfor %}{% endraw %}
+{% endfor %}
 </ul>

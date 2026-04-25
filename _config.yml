@@ -2,7 +2,7 @@
 url : "https://manumanu97.github.io"
 github_repository: https://github.com/ManuManu97
 theme: jekyll-theme-hacker
-title: ManuManu97's space
+title: ManuManu97's page
 description: Manu's official page for my projects, review and etc.
 name: &name "Manu"
 show_downloads: false
@@ -13,12 +13,19 @@ github:
 
 #site-author
 name : *name 
-bio  : "web and cybersecurity enthusiasm"
+bio  : "Nothing to say"
 
 #footer
-footer_left: 2024 Manu
-footer_right: Privacy Policy
+footer_left: Esdrongo
+footer_right: ...
 
+collections:
+  projects:
+    output: true
+  ctf:
+    output: true
+  notes:
+    output: true
 #plugin
 plugins:
   - jekyll-sitemap

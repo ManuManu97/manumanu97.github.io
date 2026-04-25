@@ -3,7 +3,6 @@ layout: page
 description: "SSRF - SSTI"
 title: "[WEB] HTB Challange - Doxit"
 ---
-# [WEB] HTB Challange - Doxit
 
 This is a web challenge based on 2 services, one exposed and one running in local.
 the exposed one is a Node js app, the other one is a flask app that simulate an AV.

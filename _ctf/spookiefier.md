@@ -1,7 +1,7 @@
 ---
 layout: page
 description: "SSTI Mako"
-title: "[WEB] HTB Challenge - Spookiefier
+title: "[WEB] HTB Challenge - Spookiefier"
 ---
 
 # [WEB] HTB Challenge - Spookiefier

